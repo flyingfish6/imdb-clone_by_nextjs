@@ -10,7 +10,7 @@ export default async function Home({ searchParams }) {
   //   }?api_key=${API_KEY}&language=en-US&page=1`
   // );
   // const value = ;
-  await delay(2000);
+  // await delay(2000);
   const res = await fetch(
     "https://api.themoviedb.org/3/movie/top_rated?api_key=3737a1121b5ff57560380ba8aa4524cc&language=en-US&page=1"
   );
@@ -20,7 +20,7 @@ export default async function Home({ searchParams }) {
   const data = await res.json();
 
   const results = data.results;
-  console.log(results);
+  // console.log(results);
 
   return <div>{<Results results={results} />}</div>;
 }
